@@ -28,3 +28,6 @@
 	 DrawDebugLine(GetWorld(), StartLocation, EndLocation, FColor::Red, false, -1.f, 0, 1.f); \
 	 DrawDebugPoint(GetWorld(), EndLocation, 15.f, FColor::Red, false, 1.f); \
 }
+
+#define DRAW_SPHERE_COLOR(Location, Color)DrawDebugSphere(GetWorld(), Location, 25.f, 8, Color, false, 5.f);
+

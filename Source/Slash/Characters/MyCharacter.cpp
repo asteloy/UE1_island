@@ -161,7 +161,7 @@ void AMyCharacter::PlayAttackMontage()
 
 }
 
-void AMyCharacter::PlayEquipMontage(FName SectionName)
+void AMyCharacter::PlayEquipMontage(const FName& SectionName)
 {
 	UAnimInstance* AnimInstance = GetMesh()->GetAnimInstance();
 	if (AnimInstance && EquipMontage)
