@@ -43,11 +43,14 @@ private:
 public:
 	FORCEINLINE UBoxComponent* GetWeaponBox() const { return WeaponBox;  }
 
+	TArray<AActor*> IgnoreActors;
+
 private:
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* BoxTraceStart;
 
 	UPROPERTY(VisibleAnywhere)
 	USceneComponent* BoxTraceEnd;
+
 
 };
